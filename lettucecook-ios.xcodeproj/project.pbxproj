@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		8404A3CB2782E3CE00B278C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404A3CA2782E3CE00B278C7 /* AppDelegate.swift */; };
 		8404A3CD2782E3CE00B278C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404A3CC2782E3CE00B278C7 /* SceneDelegate.swift */; };
-		8404A3CF2782E3CE00B278C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404A3CE2782E3CE00B278C7 /* ViewController.swift */; };
+		8404A3CF2782E3CE00B278C7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404A3CE2782E3CE00B278C7 /* HomeViewController.swift */; };
 		8404A3D22782E3CE00B278C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8404A3D02782E3CE00B278C7 /* Main.storyboard */; };
 		8404A3D52782E3CE00B278C7 /* lettucecook_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8404A3D32782E3CE00B278C7 /* lettucecook_ios.xcdatamodeld */; };
 		8404A3D72782E3D200B278C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8404A3D62782E3D200B278C7 /* Assets.xcassets */; };
 		8404A3DA2782E3D200B278C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8404A3D82782E3D200B278C7 /* LaunchScreen.storyboard */; };
+		843FD9D3278B7E7B00303AA1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FD9D2278B7E7B00303AA1 /* LoginViewController.swift */; };
+		843FD9D7278B7EB300303AA1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FD9D6278B7EB300303AA1 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8404A3C72782E3CE00B278C7 /* lettucecook-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lettucecook-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8404A3CA2782E3CE00B278C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8404A3CC2782E3CE00B278C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8404A3CE2782E3CE00B278C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8404A3CE2782E3CE00B278C7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8404A3D12782E3CE00B278C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8404A3D42782E3CE00B278C7 /* lettucecook_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lettucecook_ios.xcdatamodel; sourceTree = "<group>"; };
 		8404A3D62782E3D200B278C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8404A3D92782E3D200B278C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8404A3DB2782E3D200B278C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843FD9D2278B7E7B00303AA1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		843FD9D6278B7EB300303AA1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,11 @@
 		8404A3C92782E3CE00B278C7 /* lettucecook-ios */ = {
 			isa = PBXGroup;
 			children = (
+				843FD9D2278B7E7B00303AA1 /* LoginViewController.swift */,
+				843FD9D6278B7EB300303AA1 /* SignUpViewController.swift */,
 				8404A3CA2782E3CE00B278C7 /* AppDelegate.swift */,
 				8404A3CC2782E3CE00B278C7 /* SceneDelegate.swift */,
-				8404A3CE2782E3CE00B278C7 /* ViewController.swift */,
+				8404A3CE2782E3CE00B278C7 /* HomeViewController.swift */,
 				8404A3D02782E3CE00B278C7 /* Main.storyboard */,
 				8404A3D62782E3D200B278C7 /* Assets.xcassets */,
 				8404A3D82782E3D200B278C7 /* LaunchScreen.storyboard */,
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843FD9D7278B7EB300303AA1 /* SignUpViewController.swift in Sources */,
 				8404A3D52782E3CE00B278C7 /* lettucecook_ios.xcdatamodeld in Sources */,
-				8404A3CF2782E3CE00B278C7 /* ViewController.swift in Sources */,
+				8404A3CF2782E3CE00B278C7 /* HomeViewController.swift in Sources */,
 				8404A3CB2782E3CE00B278C7 /* AppDelegate.swift in Sources */,
+				843FD9D3278B7E7B00303AA1 /* LoginViewController.swift in Sources */,
 				8404A3CD2782E3CE00B278C7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,9 +303,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "lettucecook-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LettuceCook;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,9 +332,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "lettucecook-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LettuceCook;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
