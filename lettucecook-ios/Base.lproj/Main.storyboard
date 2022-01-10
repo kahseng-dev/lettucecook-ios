@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -28,12 +29,12 @@
         <!--Tab Bar Controller-->
         <scene sceneID="toG-RZ-n7i">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="jj5-YU-dIP" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Main" automaticallyAdjustsScrollViewInsets="NO" id="jj5-YU-dIP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FTs-iP-NIX">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="Primary"/>
                     </tabBar>
                     <connections>
                         <segue destination="coS-JQ-FR4" kind="relationship" relationship="viewControllers" id="HrB-ew-93N"/>
@@ -44,11 +45,13 @@
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
         </scene>
-        <!--Home-->
+        <!--Navigation Controller-->
         <scene sceneID="wEo-2r-dk3">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="coS-JQ-FR4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="HKY-cL-Xb5"/>
+                    <tabBarItem key="tabBarItem" title="" id="HKY-cL-Xb5">
+                        <imageReference key="image" image="house.fill" catalog="system"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="sUy-FP-kmf">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -63,16 +66,18 @@
             </objects>
             <point key="canvasLocation" x="982.60869565217399" y="-72.321428571428569"/>
         </scene>
-        <!--Profile-->
+        <!--Navigation Controller-->
         <scene sceneID="C8s-gd-Mo9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jTc-ND-Z02" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="ptm-Lj-cEA"/>
+                    <tabBarItem key="tabBarItem" title="" id="ptm-Lj-cEA">
+                        <imageReference key="image" image="person.fill" catalog="system"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="LQm-zI-t3G">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" name="Secondary"/>
+                        <color key="tintColor" name="Primary"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U2G-50-br8">
@@ -89,7 +94,7 @@
         <!--Hello-->
         <scene sceneID="B7C-Lp-f1X">
             <objects>
-                <viewController id="vW2-g4-jtL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Account" id="vW2-g4-jtL" customClass="AccountViewController" customModule="lettucecook_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zFk-KI-Ffk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +102,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCD-p2-yBC">
                                 <rect key="frame" x="20" y="241" width="64" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Log In"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Log In">
+                                    <color key="baseBackgroundColor" name="Light"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="Rsi-X0-Ek9" kind="show" id="CmU-Ie-w4n"/>
                                 </connections>
@@ -111,9 +118,20 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hnj-Xb-I2z">
                                 <rect key="frame" x="98" y="241" width="75" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign Up">
+                                    <color key="baseForegroundColor" name="Secondary"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="hHZ-xi-854" kind="show" id="d7m-Kz-RN2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZ6-Rq-PdC">
+                                <rect key="frame" x="173" y="690" width="70" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutButton:" destination="vW2-g4-jtL" eventType="touchUpInside" id="wva-h6-V0S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -135,6 +153,9 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="vLJ-yq-HMk"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="logoutButton" destination="MZ6-Rq-PdC" id="3y1-hb-Grw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVX-rw-lRD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,7 +164,7 @@
         <!--Log in-->
         <scene sceneID="qMU-Us-nwW">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="Rsi-X0-Ek9" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Rsi-X0-Ek9" customClass="LoginViewController" customModule="lettucecook_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JwZ-9m-ezh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,8 +194,10 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Login">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="baseForegroundColor" name="Secondary"/>
-                                    <color key="baseBackgroundColor" name="Primary"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginButton:" destination="Rsi-X0-Ek9" eventType="touchUpInside" id="wAa-z0-YPq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jrI-5Q-Wct"/>
@@ -192,6 +215,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Log in" id="SVR-8p-9w6"/>
+                    <connections>
+                        <outlet property="loginPasswordField" destination="USh-m2-xQP" id="pwC-2Q-7Ul"/>
+                        <outlet property="loginUsernameField" destination="jGQ-IJ-5Iv" id="kQg-D3-gjX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4d-Vv-thU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,7 +227,7 @@
         <!--Create an Account-->
         <scene sceneID="mKd-W1-SFt">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="hHZ-xi-854" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="hHZ-xi-854" customClass="SignUpViewController" customModule="lettucecook_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cN0-jC-JIT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,7 +254,7 @@
                                     <constraint firstAttribute="height" constant="48" id="lXt-FQ-an1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ijt-dS-zLy">
                                 <rect key="frame" x="20" y="414" width="374" height="48"/>
@@ -235,7 +262,7 @@
                                     <constraint firstAttribute="height" constant="48" id="ltm-PF-UJE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vH-4z-K6T">
                                 <rect key="frame" x="20" y="522" width="374" height="48"/>
@@ -246,8 +273,10 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Register">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="baseForegroundColor" name="Secondary"/>
-                                    <color key="baseBackgroundColor" name="Primary"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signUpButton:" destination="hHZ-xi-854" eventType="touchUpInside" id="Nef-dx-zf9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hUN-Ng-JCh"/>
@@ -271,18 +300,30 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Create an Account" id="diX-MF-bvd"/>
+                    <connections>
+                        <outlet property="signUpConfirmPasswordField" destination="ijt-dS-zLy" id="9lJ-tv-C7K"/>
+                        <outlet property="signUpEmailField" destination="qtP-Vd-JUR" id="SWY-2j-XAB"/>
+                        <outlet property="signUpPasswordField" destination="jfb-01-2PK" id="ScX-au-wMb"/>
+                        <outlet property="signUpUsernameField" destination="8pG-FN-guL" id="649-q6-sQa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dpq-VR-ddU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2961" y="1423"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="Primary"/>
     <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <namedColor name="Light">
+            <color red="0.81960784313725488" green="0.98039215686274506" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Primary">
-            <color red="0.74509803921568629" green="0.94901960784313721" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.062745098039215685" green="0.72549019607843135" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="Secondary">
-            <color red="0.39599999785423279" green="0.63899999856948853" blue="0.050999999046325684" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.023529411764705882" green="0.37254901960784315" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
