@@ -8,12 +8,10 @@
 import UIKit
 import FirebaseAuth
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var loginErrorLabel: UILabel!
-    
     @IBOutlet weak var loginEmailField: UITextField!
-    
     @IBOutlet weak var loginPasswordField: UITextField!
     
     @IBAction func loginButton(_ sender: Any) {
@@ -39,7 +37,24 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.loginEmailField.delegate = self
+        self.loginPasswordField.delegate = self
+        
         loginErrorLabel.isHidden = true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.switchBasedNextTextField(textField)
+        return true
+    }
+    
+    private func switchBasedNextTextField(_ textField: UITextField) {
+        switch textField {
+        case self.loginEmailField:
+            self.loginPasswordField.becomeFirstResponder()
+        default:
+            self.loginPasswordField.resignFirstResponder()
+        }
     }
     
     func showError(error:String) {
