@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>328978361927-d84eht8p8app787l8308svtobgmc8vmo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.328978361927-d84eht8p8app787l8308svtobgmc8vmo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAY814BfOcqW2uupmK5kBZ57o9jxRsZu_8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>328978361927</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>sg.mad2.lettucecook-ios</string>
+	<key>PROJECT_ID</key>
+	<string>lettucecook-ios</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lettucecook-ios.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:328978361927:ios:34402424aa647955d44b62</string>
+</dict>
+</plist>

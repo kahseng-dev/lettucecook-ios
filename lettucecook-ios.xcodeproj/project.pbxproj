@@ -7,25 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7185F5B3BCCD07E16C6FB791 /* Pods_lettucecook_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96CA635744E199F877D0C2E /* Pods_lettucecook_ios.framework */; };
 		8404A3CB2782E3CE00B278C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404A3CA2782E3CE00B278C7 /* AppDelegate.swift */; };
 		8404A3CD2782E3CE00B278C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404A3CC2782E3CE00B278C7 /* SceneDelegate.swift */; };
-		8404A3CF2782E3CE00B278C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404A3CE2782E3CE00B278C7 /* ViewController.swift */; };
+		8404A3CF2782E3CE00B278C7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404A3CE2782E3CE00B278C7 /* HomeViewController.swift */; };
 		8404A3D22782E3CE00B278C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8404A3D02782E3CE00B278C7 /* Main.storyboard */; };
 		8404A3D52782E3CE00B278C7 /* lettucecook_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8404A3D32782E3CE00B278C7 /* lettucecook_ios.xcdatamodeld */; };
 		8404A3D72782E3D200B278C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8404A3D62782E3D200B278C7 /* Assets.xcassets */; };
 		8404A3DA2782E3D200B278C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8404A3D82782E3D200B278C7 /* LaunchScreen.storyboard */; };
+		8424017E278DEDEC00B4A23C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424017D278DEDEC00B4A23C /* Constants.swift */; };
+		843FD9D3278B7E7B00303AA1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FD9D2278B7E7B00303AA1 /* LoginViewController.swift */; };
+		843FD9D7278B7EB300303AA1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FD9D6278B7EB300303AA1 /* SignUpViewController.swift */; };
+		84CBC96D278CA8F200D74A87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CBC96C278CA8F200D74A87 /* GoogleService-Info.plist */; };
+		84CBC96F278CAFB100D74A87 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CBC96E278CAFB100D74A87 /* AccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C612F3EEA09C12E582197B1 /* Pods-lettucecook-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lettucecook-ios.debug.xcconfig"; path = "Target Support Files/Pods-lettucecook-ios/Pods-lettucecook-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		8404A3C72782E3CE00B278C7 /* lettucecook-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lettucecook-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8404A3CA2782E3CE00B278C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8404A3CC2782E3CE00B278C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8404A3CE2782E3CE00B278C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8404A3CE2782E3CE00B278C7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8404A3D12782E3CE00B278C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8404A3D42782E3CE00B278C7 /* lettucecook_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lettucecook_ios.xcdatamodel; sourceTree = "<group>"; };
 		8404A3D62782E3D200B278C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8404A3D92782E3D200B278C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8404A3DB2782E3D200B278C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8424017D278DEDEC00B4A23C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		843FD9D2278B7E7B00303AA1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		843FD9D6278B7EB300303AA1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		84CBC96C278CA8F200D74A87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84CBC96E278CAFB100D74A87 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		95908CC4E0B9A45838C46AB5 /* Pods-lettucecook-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lettucecook-ios.release.xcconfig"; path = "Target Support Files/Pods-lettucecook-ios/Pods-lettucecook-ios.release.xcconfig"; sourceTree = "<group>"; };
+		E96CA635744E199F877D0C2E /* Pods_lettucecook_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lettucecook_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7185F5B3BCCD07E16C6FB791 /* Pods_lettucecook_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,8 @@
 			children = (
 				8404A3C92782E3CE00B278C7 /* lettucecook-ios */,
 				8404A3C82782E3CE00B278C7 /* Products */,
+				8B8D70762D503D6361ED9972 /* Pods */,
+				B28AF12127DE1AED924E9493 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +75,14 @@
 		8404A3C92782E3CE00B278C7 /* lettucecook-ios */ = {
 			isa = PBXGroup;
 			children = (
+				84240180278E0B3E00B4A23C /* Helpers */,
+				84CBC96C278CA8F200D74A87 /* GoogleService-Info.plist */,
+				84CBC96E278CAFB100D74A87 /* AccountViewController.swift */,
+				843FD9D2278B7E7B00303AA1 /* LoginViewController.swift */,
+				843FD9D6278B7EB300303AA1 /* SignUpViewController.swift */,
 				8404A3CA2782E3CE00B278C7 /* AppDelegate.swift */,
 				8404A3CC2782E3CE00B278C7 /* SceneDelegate.swift */,
-				8404A3CE2782E3CE00B278C7 /* ViewController.swift */,
+				8404A3CE2782E3CE00B278C7 /* HomeViewController.swift */,
 				8404A3D02782E3CE00B278C7 /* Main.storyboard */,
 				8404A3D62782E3D200B278C7 /* Assets.xcassets */,
 				8404A3D82782E3D200B278C7 /* LaunchScreen.storyboard */,
@@ -70,6 +92,31 @@
 			path = "lettucecook-ios";
 			sourceTree = "<group>";
 		};
+		84240180278E0B3E00B4A23C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8424017D278DEDEC00B4A23C /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8B8D70762D503D6361ED9972 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C612F3EEA09C12E582197B1 /* Pods-lettucecook-ios.debug.xcconfig */,
+				95908CC4E0B9A45838C46AB5 /* Pods-lettucecook-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B28AF12127DE1AED924E9493 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E96CA635744E199F877D0C2E /* Pods_lettucecook_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8404A3DE2782E3D200B278C7 /* Build configuration list for PBXNativeTarget "lettucecook-ios" */;
 			buildPhases = (
+				2E09C5B866E9FAAE34AF3BD0 /* [CP] Check Pods Manifest.lock */,
 				8404A3C32782E3CE00B278C7 /* Sources */,
 				8404A3C42782E3CE00B278C7 /* Frameworks */,
 				8404A3C52782E3CE00B278C7 /* Resources */,
+				CFDDBB41DD5FC9076614C109 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8404A3DA2782E3D200B278C7 /* LaunchScreen.storyboard in Resources */,
+				84CBC96D278CA8F200D74A87 /* GoogleService-Info.plist in Resources */,
 				8404A3D72782E3D200B278C7 /* Assets.xcassets in Resources */,
 				8404A3D22782E3CE00B278C7 /* Main.storyboard in Resources */,
 			);
@@ -136,15 +186,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E09C5B866E9FAAE34AF3BD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lettucecook-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFDDBB41DD5FC9076614C109 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lettucecook-ios/Pods-lettucecook-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lettucecook-ios/Pods-lettucecook-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lettucecook-ios/Pods-lettucecook-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8404A3C32782E3CE00B278C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843FD9D7278B7EB300303AA1 /* SignUpViewController.swift in Sources */,
 				8404A3D52782E3CE00B278C7 /* lettucecook_ios.xcdatamodeld in Sources */,
-				8404A3CF2782E3CE00B278C7 /* ViewController.swift in Sources */,
+				84CBC96F278CAFB100D74A87 /* AccountViewController.swift in Sources */,
+				8404A3CF2782E3CE00B278C7 /* HomeViewController.swift in Sources */,
 				8404A3CB2782E3CE00B278C7 /* AppDelegate.swift in Sources */,
+				843FD9D3278B7E7B00303AA1 /* LoginViewController.swift in Sources */,
 				8404A3CD2782E3CE00B278C7 /* SceneDelegate.swift in Sources */,
+				8424017E278DEDEC00B4A23C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +384,7 @@
 		};
 		8404A3DF2782E3D200B278C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C612F3EEA09C12E582197B1 /* Pods-lettucecook-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,9 +392,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "lettucecook-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LettuceCook;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +414,7 @@
 		};
 		8404A3E02782E3D200B278C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95908CC4E0B9A45838C46AB5 /* Pods-lettucecook-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,9 +422,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "lettucecook-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LettuceCook;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
