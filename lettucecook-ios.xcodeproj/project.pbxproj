@@ -15,6 +15,7 @@
 		8404A3D52782E3CE00B278C7 /* lettucecook_ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8404A3D32782E3CE00B278C7 /* lettucecook_ios.xcdatamodeld */; };
 		8404A3D72782E3D200B278C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8404A3D62782E3D200B278C7 /* Assets.xcassets */; };
 		8404A3DA2782E3D200B278C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8404A3D82782E3D200B278C7 /* LaunchScreen.storyboard */; };
+		8424017E278DEDEC00B4A23C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424017D278DEDEC00B4A23C /* Constants.swift */; };
 		843FD9D3278B7E7B00303AA1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FD9D2278B7E7B00303AA1 /* LoginViewController.swift */; };
 		843FD9D7278B7EB300303AA1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843FD9D6278B7EB300303AA1 /* SignUpViewController.swift */; };
 		84CBC96D278CA8F200D74A87 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84CBC96C278CA8F200D74A87 /* GoogleService-Info.plist */; };
@@ -32,6 +33,7 @@
 		8404A3D62782E3D200B278C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8404A3D92782E3D200B278C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8404A3DB2782E3D200B278C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8424017D278DEDEC00B4A23C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		843FD9D2278B7E7B00303AA1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		843FD9D6278B7EB300303AA1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		84CBC96C278CA8F200D74A87 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		8404A3C92782E3CE00B278C7 /* lettucecook-ios */ = {
 			isa = PBXGroup;
 			children = (
+				84240180278E0B3E00B4A23C /* Helpers */,
 				84CBC96C278CA8F200D74A87 /* GoogleService-Info.plist */,
 				84CBC96E278CAFB100D74A87 /* AccountViewController.swift */,
 				843FD9D2278B7E7B00303AA1 /* LoginViewController.swift */,
@@ -87,6 +90,14 @@
 				8404A3D32782E3CE00B278C7 /* lettucecook_ios.xcdatamodeld */,
 			);
 			path = "lettucecook-ios";
+			sourceTree = "<group>";
+		};
+		84240180278E0B3E00B4A23C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8424017D278DEDEC00B4A23C /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		8B8D70762D503D6361ED9972 /* Pods */ = {
@@ -229,6 +240,7 @@
 				8404A3CB2782E3CE00B278C7 /* AppDelegate.swift in Sources */,
 				843FD9D3278B7E7B00303AA1 /* LoginViewController.swift in Sources */,
 				8404A3CD2782E3CE00B278C7 /* SceneDelegate.swift in Sources */,
+				8424017E278DEDEC00B4A23C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

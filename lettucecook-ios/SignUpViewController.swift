@@ -7,8 +7,11 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
+    
+    @IBOutlet weak var signUpErrorLabel: UILabel!
     
     @IBOutlet weak var signUpUsernameField: UITextField!
     
@@ -16,42 +19,50 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var signUpPasswordField: UITextField!
     
-    @IBOutlet weak var signUpConfirmPasswordField: UITextField!
-    
     @IBAction func signUpButton(_ sender: Any) {
         
-        let username = signUpUsernameField.text!
-        let email = signUpEmailField.text!
-        let password = signUpPasswordField.text!
+        guard let username = signUpUsernameField.text, !username.isEmpty,
+              let email = signUpEmailField.text, !email.isEmpty,
+              let password = signUpPasswordField.text, !password.isEmpty else {
+                  showError(error: "Please fill in every field.")
+                  return
+              }
         
         FirebaseAuth.Auth.auth().createUser(withEmail: email,
                                             password: password,
-                                            completion: {[weak self] result, error in
-            guard let strongSelf = self else {
+                                            completion: { result, error in
+            
+            if error != nil {
+                self.showError(error: error!.localizedDescription)
                 return
             }
             
-            guard error == nil else {
-                return
-            }
-            
-            strongSelf.transitionToMain()
+            self.saveUser(userID: result!.user.uid, username: username, email: email)
+            self.transitionToMain()
         })
-        
-        
-        // TODO: Implement sign up confirm password
-        // TODO: Bug Register button does not move up for text input and click on small screens
-    }
-    
-    func transitionToMain() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "Main") as UIViewController
-        vc.modalPresentationStyle = .fullScreen // try without fullscreen
-        present(vc, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        signUpErrorLabel.isHidden = true
+    }
+    
+    func saveUser(userID:String, username:String, email:String) {
+        let ref = Database.database(url:Constants.Firebase.databaseURL).reference()
+        ref.child("users/\(userID)").setValue(["username": username, "email": email])
+    }
+    
+    func showError(error:String) {
+        signUpErrorLabel.text = error
+        signUpErrorLabel.isHidden = false
+    }
+    
+    func transitionToMain() {
+        let storyboard = UIStoryboard(name: Constants.Storyboard.main, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: Constants.Storyboard.main) as UIViewController
+        vc.modalPresentationStyle = .fullScreen // try without fullscreen
+        present(vc, animated: true, completion: nil)
     }
 }

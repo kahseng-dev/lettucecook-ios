@@ -8,5 +8,6 @@ target 'lettucecook-ios' do
   # Pods for lettucecook-ios
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
 
 end

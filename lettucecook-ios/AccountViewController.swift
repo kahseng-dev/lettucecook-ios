@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class AccountViewController : UIViewController {
     
@@ -16,9 +17,10 @@ class AccountViewController : UIViewController {
         do {
             try FirebaseAuth.Auth.auth().signOut()
             logoutButton.isEnabled = false
+            title = "Hello"
         }
         catch {
-            print("An error occurred, cannot sign out.")
+            // An error occurred, cannot sign out.
         }
     }
     
@@ -31,12 +33,29 @@ class AccountViewController : UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        if FirebaseAuth.Auth.auth().currentUser != nil {
+        let user = FirebaseAuth.Auth.auth().currentUser
+        
+        if user != nil {
             logoutButton.isEnabled = true
+            
+            displayUsername(userID: user!.uid)
         }
         
         else {
             logoutButton.isEnabled = false
         }
+    }
+    
+    func displayUsername(userID:String) {
+        let ref = Database.database(url: Constants.Firebase.databaseURL).reference()
+        ref.child("users/\(userID)/username").getData(completion: { error, snapshot in
+            
+            if error != nil {
+                return
+            }
+            
+            let username = snapshot.value as? String ?? "Unknown"
+            self.title = "Hello \(username)!"
+        })
     }
 }
