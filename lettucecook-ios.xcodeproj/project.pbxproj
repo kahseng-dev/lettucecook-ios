@@ -32,6 +32,7 @@
 		8404A3D42782E3CE00B278C7 /* lettucecook_ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = lettucecook_ios.xcdatamodel; sourceTree = "<group>"; };
 		8404A3D62782E3D200B278C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8404A3D92782E3D200B278C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8404A3DB2782E3D200B278C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8424017D278DEDEC00B4A23C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		843FD9D2278B7E7B00303AA1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		843FD9D6278B7EB300303AA1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				84240180278E0B3E00B4A23C /* Helpers */,
-				84A97AFD278E20A100B55109 /* Info.plist */,
+				8404A3DB2782E3D200B278C7 /* Info.plist */,
 				84CBC96E278CAFB100D74A87 /* AccountViewController.swift */,
 				84CBC96C278CA8F200D74A87 /* GoogleService-Info.plist */,
 				843FD9D2278B7E7B00303AA1 /* LoginViewController.swift */,
@@ -260,14 +261,6 @@
 				8404A3D92782E3D200B278C7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		84A97AFD278E20A100B55109 /* Info.plist */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84A97AFC278E20A100B55109 /* Base */,
-			);
-			name = Info.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
